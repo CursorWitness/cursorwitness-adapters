@@ -10,7 +10,7 @@
     "build": "tsc --project tsconfig.build.json",
     "typecheck": "tsc --noEmit --project tsconfig.json",
     "start": "node dist/index.js",
-    "test": "vitest run",
+    "test": "vitest run --config vitest.config.ts",
     "lint": "eslint src --ext .ts",
     "package:check": "pnpm run build && node scripts/verify-package.mjs",
     "cursorwitness:check": "pnpm run build && node scripts/verify-cursorwitness.mjs"
