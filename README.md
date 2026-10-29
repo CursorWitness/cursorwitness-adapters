@@ -4,6 +4,8 @@
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Node.js 20+](https://img.shields.io/badge/node.js-20%2B-339933.svg)](https://nodejs.org/)
 
+![CursorWitness adapter boundary](assets/adapter-boundary.svg)
+
 Consumer-specific integration seams for [CursorWitness](https://github.com/CursorWitness).
 
 This repository connects real event-consuming applications to the provider-neutral CursorWitness engine. It records the boundaries an adapter can actually observe and leaves unsupported boundaries explicitly `unverified`.

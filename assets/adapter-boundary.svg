@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">CursorWitness adapter boundary</title>
+  <desc id="desc">A real event consumer is connected through an adapter seam to lifecycle observations and the core oracle, with unsupported boundaries marked unverified.</desc>
+  <rect width="1200" height="360" rx="24" fill="#0d1117"/>
+  <text x="60" y="58" fill="#f0f6fc" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="700">CursorWitness adapter boundary</text>
+  <text x="60" y="88" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="16">Evidence is limited to the lifecycle boundaries the consumer exposes</text>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600" text-anchor="middle">
+    <rect x="70" y="145" width="235" height="92" rx="14" fill="#161b22" stroke="#58a6ff" stroke-width="2"/><text x="187" y="180" fill="#f0f6fc">real consumer</text><text x="187" y="207" fill="#8b949e" font-size="14">fetch + checkpoint code</text>
+    <rect x="355" y="145" width="235" height="92" rx="14" fill="#161b22" stroke="#3fb950" stroke-width="2"/><text x="472" y="180" fill="#f0f6fc">adapter seam</text><text x="472" y="207" fill="#8b949e" font-size="14">hooks + provenance</text>
+    <rect x="640" y="145" width="235" height="92" rx="14" fill="#161b22" stroke="#bc8cff" stroke-width="2"/><text x="757" y="180" fill="#f0f6fc">core oracle</text><text x="757" y="207" fill="#8b949e" font-size="14">independent assertions</text>
+    <rect x="925" y="145" width="205" height="92" rx="14" fill="#161b22" stroke="#f0883e" stroke-width="2"/><text x="1027" y="180" fill="#f0f6fc">evidence report</text><text x="1027" y="207" fill="#8b949e" font-size="14">pass / fail / unverified</text>
+  </g>
+  <g stroke="#8b949e" stroke-width="2" fill="none"><path d="M305 191h50m235 0h50m235 0h50"/><path d="m345 185 10 6-10 6m285-6 10 6-10 6m285-6 10 6-10 6"/></g>
+  <text x="70" y="300" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="15">No exactly-once claim • no manufactured cursors • no inferred durability</text>
+</svg>
