@@ -1,8 +1,25 @@
-# CursorWitness adapters
+# CursorWitness Adapters
 
-Optional integrations for testing real Stellar/Soroban event consumers with
-CursorWitness. The repository currently contains a local integration boundary
-for the `Marvelg256/soroban-indexer-ts` fork.
+[![CI](https://github.com/CursorWitness/cursorwitness-adapters/actions/workflows/ci.yml/badge.svg)](https://github.com/CursorWitness/cursorwitness-adapters/actions/workflows/ci.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![Node.js 20+](https://img.shields.io/badge/node.js-20%2B-339933.svg)](https://nodejs.org/)
+
+Consumer-specific integration seams for [CursorWitness](https://github.com/CursorWitness).
+
+This repository connects real event-consuming applications to the provider-neutral CursorWitness engine. It records the boundaries an adapter can actually observe and leaves unsupported boundaries explicitly `unverified`.
+
+## Repository role
+
+```text
+real consumer ──► adapter seam ──► lifecycle observations
+       │                              │
+       └── source/license evidence ───┘
+                                      │
+                                      ▼
+                           core oracle + report
+```
+
+The current adapter targets the local `soroban-indexer-ts` integration boundary. It is a feasibility and compatibility seam, not a claim that the upstream consumer is universally correct.
 
 ## What this repository owns
 
@@ -44,3 +61,12 @@ oracle and must report the duplicate committed-effect invariant.
 Keep adapter-specific behavior here. Extend the core only for provider-neutral
 contracts. Every adapter change must identify the consumer revision, license,
 failure boundary, and exact verification command.
+
+## Related repositories
+
+- [`cursorwitness-core`](https://github.com/CursorWitness/cursorwitness-core) — contracts, fixtures, oracle, and report model
+- [`cursorwitness-cli`](https://github.com/CursorWitness/cursorwitness-cli) — offline executable and report presentation
+
+## License
+
+Apache-2.0 for the CursorWitness adapter code. Third-party consumer code remains subject to its own license and provenance review.
