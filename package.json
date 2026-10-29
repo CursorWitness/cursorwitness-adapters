@@ -16,7 +16,7 @@
     "cursorwitness:check": "pnpm run build && node scripts/verify-cursorwitness.mjs"
   },
   "dependencies": {
-    "@cursorwitness/core": "git+https://github.com/CursorWitness/cursorwitness-core.git#cdd78a9",
+    "@cursorwitness/core": "git+https://github.com/CursorWitness/cursorwitness-core.git#fba74b3",
     "@stellar/stellar-sdk": "^13.1.0",
     "better-sqlite3": "^11.0.0",
     "dotenv": "^16.4.7",

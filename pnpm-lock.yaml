@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@cursorwitness/core':
-        specifier: git+https://github.com/CursorWitness/cursorwitness-core.git#cdd78a9
-        version: https://codeload.github.com/CursorWitness/cursorwitness-core/tar.gz/cdd78a9
+        specifier: git+https://github.com/CursorWitness/cursorwitness-core.git#fba74b3
+        version: https://codeload.github.com/CursorWitness/cursorwitness-core/tar.gz/fba74b3
       '@stellar/stellar-sdk':
         specifier: ^13.1.0
         version: 13.3.0
@@ -48,8 +48,8 @@ importers:
 
 packages:
 
-  '@cursorwitness/core@https://codeload.github.com/CursorWitness/cursorwitness-core/tar.gz/cdd78a9':
-    resolution: {tarball: https://codeload.github.com/CursorWitness/cursorwitness-core/tar.gz/cdd78a9}
+  '@cursorwitness/core@https://codeload.github.com/CursorWitness/cursorwitness-core/tar.gz/fba74b3':
+    resolution: {tarball: https://codeload.github.com/CursorWitness/cursorwitness-core/tar.gz/fba74b3}
     version: 0.1.0-seam.0
     engines: {node: '>=20.19.0'}
 
@@ -1207,7 +1207,7 @@ packages:
 
 snapshots:
 
-  '@cursorwitness/core@https://codeload.github.com/CursorWitness/cursorwitness-core/tar.gz/cdd78a9': {}
+  '@cursorwitness/core@https://codeload.github.com/CursorWitness/cursorwitness-core/tar.gz/fba74b3': {}
 
   '@esbuild/aix-ppc64@0.28.2':
     optional: true
