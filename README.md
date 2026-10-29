@@ -5,15 +5,12 @@
 [![CI](https://github.com/CursorWitness/cursorwitness-adapters/actions/workflows/ci.yml/badge.svg)](https://github.com/CursorWitness/cursorwitness-adapters/actions/workflows/ci.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Node.js 20+](https://img.shields.io/badge/node.js-20%2B-339933.svg)](https://nodejs.org/)
-[![Status: feasibility](https://img.shields.io/badge/status-feasibility-orange.svg)](#current-limitations)
 
 Consumer-specific integration seams for [CursorWitness](https://github.com/CursorWitness).
 
 This repository connects real event-consuming applications to the provider-neutral CursorWitness engine. It records the boundaries an adapter can actually observe and leaves unsupported boundaries explicitly `unverified`.
 
 ## Repository role
-
-Adapters connect real consumers to independently recorded lifecycle evidence:
 
 ```text
 real consumer ──► adapter seam ──► lifecycle observations
@@ -67,8 +64,6 @@ Keep adapter-specific behavior here. Extend the core only for provider-neutral
 contracts. Every adapter change must identify the consumer revision, license,
 failure boundary, and exact verification command.
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the repository contribution workflow.
-
 ## Related repositories
 
 - [`cursorwitness-core`](https://github.com/CursorWitness/cursorwitness-core) — contracts, fixtures, oracle, and report model
@@ -81,5 +76,3 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the repository contribution workflo
 ## License
 
 Apache-2.0 for the CursorWitness adapter code. Third-party consumer code remains subject to its own license and provenance review.
-
-See also: [`LICENSE`](LICENSE) · [`SECURITY.md`](SECURITY.md) · [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) · [`CHANGELOG.md`](CHANGELOG.md) · [`CURSORWITNESS_ADAPTER.md`](CURSORWITNESS_ADAPTER.md)

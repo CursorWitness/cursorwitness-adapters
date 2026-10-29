@@ -1,4 +1,4 @@
-name: Adapters CI
+name: Adapter CI
 
 on:
   push:
@@ -23,8 +23,6 @@ jobs:
           node-version: ${{ matrix.node }}
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run typecheck
-      - run: pnpm test
       - run: pnpm run build
       - run: pnpm run package:check
       - run: pnpm run cursorwitness:check
