@@ -31,6 +31,9 @@ Current limits:
 - the fork's existing SQLite tests require a locally available
   `better-sqlite3` native binding;
 - the current fetch path does not expose cursor continuation;
-- the fork license file must be clarified before distribution;
-- local changes are uncommitted and unpushed;
+- the upstream fork has no `LICENSE` file and GitHub reports no license
+  metadata; this repository is therefore not distributable as a bundled
+  consumer derivative until provenance is resolved;
+- the Phase 35 CI/provenance remediation is pending publication and CI
+  confirmation;
 - this is a local integration repository, not a public release.
