@@ -34,6 +34,6 @@ Current limits:
 - the upstream fork has no `LICENSE` file and GitHub reports no license
   metadata; this repository is therefore not distributable as a bundled
   consumer derivative until provenance is resolved;
-- the Phase 35 CI/provenance remediation is pending publication and CI
-  confirmation;
+- the Phase 35 CI/provenance remediation is published at commit `3be0df0`;
+  Node 20 and Node 24 adapter CI passed in [run 42852953088](https://github.com/CursorWitness/cursorwitness-adapters/actions/runs/42852953088);
 - this is a local integration repository, not a public release.
